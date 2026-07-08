@@ -101,7 +101,6 @@ build $target_image=image_name $tag=default_tag:
     BUILD_ARGS=()
     LABELS=()
 
-    BUILD_ARGS+=("--platform" "linux/arm64")
     BUILD_ARGS+=("--arch" "arm64")
 
     if [[ -z "$(git status -s)" ]]; then
